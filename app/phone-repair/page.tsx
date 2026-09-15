@@ -1,8 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Breadcrumbs, FaqList, PrimaryLink, SectionHeader } from "@/components/page-elements";
 import { JsonLd } from "@/components/json-ld";
 import { SERVICES, SITE } from "@/lib/site";
 import { breadcrumbSchema, buildMetadata, faqSchema, serviceSchema } from "@/lib/seo";
+import { IPHONE_MODELS } from "@/lib/iphone-models";
 
 const service = SERVICES["phone-repair"];
 
@@ -141,6 +143,19 @@ export default function PhoneRepairPage() {
         <div className="section-shell narrow">
           <SectionHeader question="What do phone repair customers ask?" />
           <FaqList faqs={service.faqs} />
+        </div>
+      </section>
+
+      <section className="section section-paper">
+        <div className="section-shell">
+          <SectionHeader question="Most Common iPhone Models That We Fix" answer="Select your model below for specific details on screen and battery repair." />
+          <div className="models-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1rem', marginTop: '2rem' }}>
+            {IPHONE_MODELS.map((model) => (
+              <Link key={model.slug} href={`/iphone-repair/${model.slug}`} style={{ padding: '1rem', background: 'var(--color-background)', border: '1px solid var(--color-border)', borderRadius: '8px', textDecoration: 'none', color: 'var(--color-text)', fontWeight: '500', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
+                {model.name} Repair
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
