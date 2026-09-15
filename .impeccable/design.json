@@ -1,0 +1,37 @@
+{
+  "name": "CEOTurbo",
+  "northStar": "The Visibility Command Center",
+  "colors": {
+    "ink": "#101716",
+    "paper": "#f4f0e7",
+    "white": "#fffdf8",
+    "teal": "#36b7a0",
+    "tealDark": "#0c6c5c",
+    "coral": "#ff654f",
+    "line": "#cdd4cf",
+    "muted": "#53605c"
+  },
+  "typography": {
+    "display": "Archivo Black",
+    "body": "Source Sans 3",
+    "delivery": "self-hosted"
+  },
+  "layout": {
+    "contentMax": "1180px",
+    "desktopRail": "250px",
+    "mobileBreakpoint": "820px",
+    "mobileDock": "64px"
+  },
+  "motion": {
+    "interface": "Motion",
+    "productPhysics": "React Spring",
+    "reducedMotion": true
+  },
+  "rules": [
+    "Proof images use intrinsic ratios and contain fit",
+    "Coral is reserved for conversion actions",
+    "Historical results require source screenshots and disclaimers",
+    "No ranking, lead, citation, review, or revenue guarantees",
+    "No generic card grids, glassmorphism, gradient text, or emoji icons"
+  ]
+}

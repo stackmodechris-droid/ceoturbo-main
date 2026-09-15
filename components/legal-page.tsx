@@ -1,0 +1,2 @@
+import { Breadcrumbs } from "@/components/page-elements";
+export function LegalPage({title,eyebrow,children}:{title:string;eyebrow:string;children:React.ReactNode}){return <><section className="service-hero section-dark"><div className="section-shell"><Breadcrumbs items={[{label:"Home",href:"/"},{label:title}]}/><p className="eyebrow">{eyebrow}</p><h1>{title}</h1><p className="lede">Last updated August 15, 2026.</p></div></section><section className="section section-white"><div className="section-shell narrow article-body">{children}</div></section></>}
