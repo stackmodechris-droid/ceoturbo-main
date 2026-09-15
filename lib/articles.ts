@@ -371,6 +371,192 @@ export const articles: InsightArticle[] = [
       { label: "FTC: Nixing the Fix — report on right to repair", url: "https://www.ftc.gov/reports/nixing-the-fix-ftc-report-to-congress-on-repair-restrictions" },
     ],
   },
+  {
+  "slug": "phone-screen-repair-atlanta-guide",
+  "title": "The Ultimate Guide to Phone Screen Repair in Atlanta: Costs, Time, and Warranties",
+  "description": "Everything you need to know about replacing a cracked iPhone or Samsung screen in Atlanta, Duluth, and Gwinnett County.",
+  "answer": "Phone screen repair in Atlanta typically costs between $80 and $250 depending on the model, and takes 30 to 60 minutes at a local repair shop. Always ensure the shop offers a labor warranty (minimum 90 days) and uses OEM-equivalent parts to preserve touch sensitivity and Face ID functionality.",
+  "published": "2026-09-15",
+  "modified": "2026-09-15",
+  "readingTime": "6 min read",
+  "sections": [
+    {
+      "heading": "The Problem with Cracked Phone Screens",
+      "paragraphs": [
+        "A cracked screen is more than just a cosmetic annoyance. Once the structural integrity of the outer glass is compromised, moisture, dust, and debris can easily enter the device. This turns a simple screen repair into a complex motherboard issue if left untreated for too long.",
+        "Furthermore, microscopic glass splinters can cause injury, and the display can suffer from 'ghost touching'\u2014where the phone registers taps you aren't making, potentially locking you out of your device."
+      ]
+    },
+    {
+      "heading": "Atlanta Screen Repair Costs and Turnaround Times",
+      "paragraphs": [
+        "In the Atlanta metro area (including Duluth, Lawrenceville, and Gwinnett), the cost to repair a phone screen varies heavily by the age of the device and whether it uses an LCD or OLED panel. Older iPhones (iPhone 11 and below) typically cost $80 to $120. Newer models (iPhone 13, 14, 15) and flagship Samsung Galaxy S-series phones range from $150 to $250+.",
+        "Most reputable shops, including ElectronicReboot, keep popular screens in stock. This means the actual repair takes about 30 to 60 minutes. Mail-in services or Apple Store appointments can often take days, making local repair shops the superior choice for fast turnaround."
+      ],
+      "table": {
+        "headers": [
+          "Service Type",
+          "Average Cost",
+          "Turnaround Time"
+        ],
+        "rows": [
+          [
+            "Apple Store (Out of Warranty)",
+            "$279 - $379+",
+            "1 - 3 Days (Requires Appt)"
+          ],
+          [
+            "Big Box Repair Chains",
+            "$150 - $300",
+            "1 - 4 Hours"
+          ],
+          [
+            "Local Independent Shop (ElectronicReboot)",
+            "$80 - $250",
+            "30 - 60 Minutes"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Common Mistakes When Getting a Screen Fixed",
+      "paragraphs": [
+        "The biggest mistake consumers make is choosing a repair shop based solely on the absolute lowest price. If a shop is charging $40 for a screen repair that everyone else charges $120 for, they are using substandard, counterfeit LCDs that will have poor color accuracy, low brightness, and fragile glass.",
+        "Another common mistake is not asking about the warranty. A professional repair shop will stand behind their work. If they don't offer at least a 30-day (ideally 90-day) warranty on the part and labor, walk away."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Will a third-party screen repair void my warranty?",
+      "answer": "Under the Magnuson-Moss Warranty Act, third-party repairs do not void your general warranty. However, Apple may refuse to cover the specific component that was replaced if it fails later."
+    },
+    {
+      "question": "Does fixing the screen fix my Face ID?",
+      "answer": "Face ID relies on the front-facing camera assembly. A professional screen swap will carefully transfer this assembly to the new screen, preserving Face ID. If the assembly itself was damaged in the drop, Face ID may require specialized micro-soldering."
+    }
+  ],
+  "sources": [
+    {
+      "label": "FTC: Nixing the Fix Report",
+      "url": "https://www.ftc.gov/reports/nixing-the-fix-ftc-report-to-congress-on-repair-restrictions"
+    },
+    {
+      "label": "Apple: iPhone Screen Repair Pricing",
+      "url": "https://support.apple.com/iphone/repair/screen-replacement"
+    }
+  ]
+},
+  {
+  "slug": "why-georgia-local-businesses-need-meta-ads",
+  "title": "Why Local Service Businesses in Georgia Need Meta Ads to Scale in 2026",
+  "description": "Discover how plumbers, roofers, and local service businesses in Georgia use Meta Ads to generate exclusive, high-quality leads instead of relying on shared lead platforms.",
+  "answer": "Local service businesses in Georgia need Meta Ads because they provide exclusive, high-intent leads at a lower cost-per-acquisition than shared platforms like Angi or HomeAdvisor. By using hyper-local geo-targeting and direct-response creatives, businesses can predictably scale their revenue.",
+  "published": "2026-09-15",
+  "modified": "2026-09-15",
+  "readingTime": "7 min read",
+  "sections": [
+    {
+      "heading": "The Problem with Shared Lead Platforms",
+      "paragraphs": [
+        "For years, local service businesses\u2014plumbers, HVAC technicians, electricians, and roofers\u2014have relied on platforms like Angi, HomeAdvisor, and Thumbtack. The problem? You are paying for a lead that is simultaneously sent to four of your local competitors. It becomes a race to the bottom on pricing.",
+        "Furthermore, these platforms own the customer relationship. You are renting access to their audience, rather than building your own brand equity in the Atlanta or broader Georgia market."
+      ]
+    },
+    {
+      "heading": "The Meta Ads Solution for Local Businesses",
+      "paragraphs": [
+        "Meta (Facebook and Instagram) Ads solve this by allowing you to generate exclusive leads. When a homeowner in Duluth clicks your ad and fills out a form, that lead goes directly to you and nobody else. You control the branding, the offer, and the follow-up.",
+        "With Meta's advanced machine learning algorithms, you can target specific zip codes, homeowner demographics, and behavioral interests. This hyper-local targeting ensures your ad spend isn't wasted on people outside your service area."
+      ],
+      "bullets": [
+        "Exclusive leads: You aren't competing with 5 other contractors for the same phone call.",
+        "Brand building: Your local community sees your logo and trucks constantly, building trust.",
+        "Predictable scaling: Once you find a winning ad, you can increase the budget to get a predictable number of leads."
+      ]
+    },
+    {
+      "heading": "Common Mistakes with Meta Ads",
+      "paragraphs": [
+        "The most common mistake is using the 'Boost Post' button. Boosting a post is optimized for engagement (likes and comments), not lead generation. To generate actual revenue, you must use the Meta Ads Manager and optimize for Lead Generation or Conversions.",
+        "Another mistake is poor follow-up speed. A lead generated on Facebook is highly perishable. If you don't call them within 5 minutes, the conversion rate drops by over 80%. Automated SMS follow-ups are critical."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How much should a local business spend on Meta Ads?",
+      "answer": "To get meaningful data and exit the learning phase, local businesses should start with a minimum budget of $1,000 to $1,500 per month. Once a positive ROI is established, the budget can be scaled up."
+    },
+    {
+      "question": "Do Facebook Ads still work in 2026?",
+      "answer": "Yes. While privacy changes have altered tracking, Meta's AI-driven targeting is more powerful than ever. Broad targeting combined with strong, localized creative is highly effective for local lead generation."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Meta for Business: Lead Generation",
+      "url": "https://www.facebook.com/business/goals/lead-generation"
+    }
+  ]
+},
+  {
+  "slug": "how-seo-optimized-websites-generate-leads",
+  "title": "How Fast, SEO-Optimized Websites Actually Generate Leads",
+  "description": "Stop losing customers to slow, outdated websites. Learn how speed, schema markup, and technical SEO turn a website into a lead-generation machine.",
+  "answer": "SEO-optimized websites generate leads by ranking higher in Google search results, loading instantly, and providing a seamless user experience. By combining semantic HTML, local Schema markup, and conversion-focused design, these websites capture high-intent traffic that generic templates miss.",
+  "published": "2026-09-15",
+  "modified": "2026-09-15",
+  "readingTime": "8 min read",
+  "sections": [
+    {
+      "heading": "The Problem with Generic Website Builders",
+      "paragraphs": [
+        "Many local business owners use drag-and-drop website builders or bloated WordPress templates because they are cheap and easy to set up. However, these platforms generate messy code, load unnecessary scripts, and suffer from poor Core Web Vitals (Google's speed metrics).",
+        "A slow website doesn't just frustrate users\u2014it actively harms your Google ranking. If your competitor's site loads in 1 second and yours takes 5 seconds, Google will consistently rank them above you, costing you thousands in lost revenue."
+      ]
+    },
+    {
+      "heading": "The Technical SEO Solution",
+      "paragraphs": [
+        "A truly optimized website is hand-coded using modern frameworks (like React or Next.js) to ensure sub-second page loads. But speed is only half the battle. The site must also communicate clearly with search engines.",
+        "This is where Schema Markup (JSON-LD) comes in. By embedding structured data into your site, you explicitly tell Google exactly what services you offer, what geographic areas you serve (e.g., Atlanta, Gwinnett), and your pricing structure. This makes you eligible for rich snippets in search results."
+      ],
+      "bullets": [
+        "Sub-second load times: Drastically reduces bounce rates and improves Core Web Vitals.",
+        "LocalBusiness Schema: Tells Google your exact service area, boosting local map pack rankings.",
+        "Semantic HTML: Proper use of H1, H2, and header tags helps search engine crawlers understand your content hierarchy."
+      ]
+    },
+    {
+      "heading": "Conversion-Focused Design",
+      "paragraphs": [
+        "Traffic is useless if it doesn't convert. An SEO-optimized site must also be designed for conversions. This means clear Calls to Action (CTAs), a frictionless intake process (like a multi-step form rather than a daunting single page), and prominently displayed trust signals (reviews, warranties, guarantees).",
+        "By fixing the technical foundation and streamlining the user journey, a business can double its lead volume without spending a single additional dollar on advertising."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What are Core Web Vitals?",
+      "answer": "Core Web Vitals are a set of specific factors that Google considers important in a webpage's overall user experience. They measure loading speed (LCP), interactivity (INP), and visual stability (CLS)."
+    },
+    {
+      "question": "Is WordPress bad for SEO?",
+      "answer": "WordPress itself is not bad for SEO, but the way most people use it\u2014with dozens of plugins and bloated themes\u2014results in slow, poorly optimized sites. Custom-coded solutions offer far superior performance out of the box."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google Developers: Core Web Vitals",
+      "url": "https://developers.google.com/search/docs/appearance/core-web-vitals"
+    },
+    {
+      "label": "Schema.org: LocalBusiness",
+      "url": "https://schema.org/LocalBusiness"
+    }
+  ]
+},
 ];
 
 export function getArticle(slug: string) {

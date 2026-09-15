@@ -39,7 +39,7 @@ export default function HomePage() {
           </div>
           <div className="hero-visual-wrap">
             <Image
-              src="/images/repair/windows-pc/installing-a-cpu-fan-on-a-computer-motherboard-it-service-support-free-photo.jpg"
+              src="/Images/repair/windows-pc/installing-a-cpu-fan-on-a-computer-motherboard-free-photo.jpg"
               alt="Technician installing a CPU fan on a computer motherboard"
               width={600}
               height={400}
