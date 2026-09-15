@@ -8,7 +8,7 @@ export const SITE = {
   founder: "Christopher Robinson",
   founderAlias: "StackmodeChris",
   description:
-    "ElectronicReboot provides fast tech repair (phones, tablets, laptops, desktops, Windows PCs), website development, Meta ads management, and virtual assistance. Serving Atlanta, Stone Mountain and surrounding cities within a 25-mile radius, with future expansion to Florida and other states.",
+    "ElectronicReboot provides fast, affordable tech repair — phones, tablets, laptops, desktops, Windows PCs — plus website development and Meta ads. Serving Atlanta, Stone Mountain, Duluth, Lawrenceville, Gwinnett County, Athens, Decatur, Norcross, Tucker, Lilburn, Snellville, Suwanee, Johns Creek, Buford & surrounding Georgia cities. Mobile service expanding to Florida & North Carolina.",
   updated: "2026-09-15"
 } as const;
 
@@ -53,9 +53,9 @@ export const SERVICES: Record<ServiceKey, ServiceOffer> = {
     name: "PC Repair",
     navLabel: "PC Repair",
     eyebrow: "Windows & custom PC",
-    price: "Starting at $49",
-    priceValue: 49,
-    cadence: "flat diagnostic fee",
+    price: "Starting at $35",
+    priceValue: 35,
+    cadence: "flat diagnostic fee — credited toward repair",
     summary:
       "Fast, honest PC repair — virus removal, hardware replacements, OS reinstalls, and performance tune-ups for Windows PCs of all makes.",
     answer:
@@ -97,9 +97,9 @@ export const SERVICES: Record<ServiceKey, ServiceOffer> = {
     name: "Desktop Computer Repair",
     navLabel: "Desktop Repair",
     eyebrow: "All-in-one & tower desktops",
-    price: "Starting at $49",
-    priceValue: 49,
-    cadence: "flat diagnostic fee",
+    price: "Starting at $35",
+    priceValue: 35,
+    cadence: "flat diagnostic fee — credited toward repair",
     summary:
       "Expert desktop repair for towers, all-in-ones, and workstations — from display issues and power failures to full component replacements.",
     answer:
@@ -141,9 +141,9 @@ export const SERVICES: Record<ServiceKey, ServiceOffer> = {
     name: "Laptop Repair",
     navLabel: "Laptop Repair",
     eyebrow: "All laptop brands",
-    price: "Starting at $49",
-    priceValue: 49,
-    cadence: "flat diagnostic fee",
+    price: "Starting at $35",
+    priceValue: 35,
+    cadence: "flat diagnostic fee — credited toward repair",
     summary:
       "Screen replacements, keyboard repairs, battery swaps, charging port fixes, and full software repairs for laptops of all brands.",
     answer:
@@ -186,9 +186,9 @@ export const SERVICES: Record<ServiceKey, ServiceOffer> = {
     name: "Tablet Repair",
     navLabel: "Tablet Repair",
     eyebrow: "iPad & Android tablets",
-    price: "Starting at $49",
-    priceValue: 49,
-    cadence: "flat diagnostic fee",
+    price: "Starting at $29",
+    priceValue: 29,
+    cadence: "flat diagnostic fee — credited toward repair",
     summary:
       "Cracked screen, battery, charging port, and software repairs for iPads, Samsung Galaxy Tabs, and all major Android tablets.",
     answer:
@@ -230,9 +230,9 @@ export const SERVICES: Record<ServiceKey, ServiceOffer> = {
     name: "Phone Repair",
     navLabel: "Phone Repair",
     eyebrow: "iPhone & Android",
-    price: "Starting at $39",
-    priceValue: 39,
-    cadence: "flat diagnostic fee",
+    price: "Starting at $29",
+    priceValue: 29,
+    cadence: "flat diagnostic fee — credited toward repair",
     summary:
       "Fast iPhone and Samsung phone repairs — cracked screens, battery replacements, charging ports, cameras, and water damage assessments.",
     answer:

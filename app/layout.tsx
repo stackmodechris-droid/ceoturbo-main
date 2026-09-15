@@ -35,10 +35,12 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/brand/electronicreboot-mark.jpg", sizes: "32x32", type: "image/jpeg" },
+      { url: "/brand/er-icon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/brand/er-icon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/brand/er-icon-192.png", sizes: "192x192", type: "image/png" },
     ],
-    apple: [{ url: "/brand/electronicreboot-mark.jpg", sizes: "180x180", type: "image/jpeg" }],
+    apple: [{ url: "/brand/er-icon-180.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/brand/er-icon-32.png",
   },
 };
 

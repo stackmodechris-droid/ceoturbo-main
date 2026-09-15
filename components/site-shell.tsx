@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
-import { BrandLogo, CalendarIcon, PhoneIcon } from "@/components/brand-mark";
+import { CalendarIcon, PhoneIcon } from "@/components/brand-mark";
 import { NAV_ITEMS, SITE } from "@/lib/site";
 
 function isActive(pathname: string, href: string) {
@@ -14,9 +15,16 @@ function isActive(pathname: string, href: string) {
 export function SiteShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const menuButtonRef = useRef<HTMLButtonElement | null>(null);
   const mobileNavRef = useRef<HTMLElement | null>(null);
   const campaignPage = pathname === "/form";
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   useEffect(() => {
     if (!menuOpen) return;
@@ -58,8 +66,8 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
       <div className="campaign-frame">
         <a className="skip-link" href="#main-content">Skip to intake</a>
         <header className="campaign-header">
-          <Link href="/" className="rail-brand" aria-label="ElectronicReboot home">
-            <BrandLogo className="mobile-logo" variant="nav" priority />
+          <Link href="/" className="top-brand" aria-label="ElectronicReboot home">
+            <Image src="/brand/electronicreboot-logo.png" alt="ElectronicReboot" width={160} height={160} priority style={{ width: 140, height: "auto" }} />
           </Link>
           <a href={SITE.phoneHref} aria-label={`Call ElectronicReboot at ${SITE.phoneDisplay}`}><PhoneIcon /><span>Call {SITE.phoneDisplay}</span></a>
         </header>
@@ -71,59 +79,63 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
   return (
     <div className="site-frame">
       <a className="skip-link" href="#main-content">Skip to content</a>
-      <aside className="desktop-rail" aria-label="Primary navigation">
-        <Link href="/" className="rail-brand" aria-label="ElectronicReboot home">
-          <BrandLogo className="rail-logo" variant="nav" priority />
-        </Link>
 
-        <p className="rail-kicker">Phone. Tablet. Computer. Repaired.</p>
+      {/* Desktop top header */}
+      <header className={`top-header${scrolled ? " top-header--scrolled" : ""}`} aria-label="Primary navigation">
+        <div className="top-header-inner">
+          <Link href="/" className="top-brand" aria-label="ElectronicReboot home">
+            <Image
+              src="/brand/electronicreboot-logo.png"
+              alt="ElectronicReboot"
+              width={180}
+              height={180}
+              priority
+              style={{ width: 150, height: "auto" }}
+            />
+          </Link>
 
-        <nav className="rail-nav" aria-label="Primary navigation">
-          {NAV_ITEMS.map((item) => {
-            const active = isActive(pathname, item.href);
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`rail-link ${active ? "is-active" : ""}`}
-                aria-current={active ? "page" : undefined}
-              >
-                {active ? (
-                  <motion.span
-                    layoutId="active-rail"
-                    className="rail-active"
-                    transition={{ type: "spring", stiffness: 380, damping: 34 }}
-                  />
-                ) : null}
-                <span>{item.label}</span>
-              </Link>
-            );
-          })}
-        </nav>
+          <nav className="top-nav" aria-label="Primary navigation">
+            {NAV_ITEMS.map((item) => {
+              const active = isActive(pathname, item.href);
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`top-nav-link${active ? " is-active" : ""}`}
+                  aria-current={active ? "page" : undefined}
+                >
+                  {item.label}
+                  {active && (
+                    <motion.span
+                      layoutId="active-top-nav"
+                      className="top-nav-active"
+                      transition={{ type: "spring", stiffness: 380, damping: 34 }}
+                    />
+                  )}
+                </Link>
+              );
+            })}
+          </nav>
 
-        <div className="rail-bottom">
-          <a href={SITE.phoneHref}>Call {SITE.phoneDisplay}</a>
-          <a href={SITE.bookingUrl} target="_blank" rel="noreferrer">Book a repair call</a>
-          <p>Fast turnarounds. Honest diagnostics.</p>
+          <div className="top-header-ctas">
+            <a className="top-cta-call" href={SITE.phoneHref}><PhoneIcon /> {SITE.phoneDisplay}</a>
+            <a className="top-cta-book" href={SITE.bookingUrl} target="_blank" rel="noreferrer"><CalendarIcon /> Book</a>
+          </div>
+
+          {/* Mobile hamburger */}
+          <button
+            ref={menuButtonRef}
+            type="button"
+            className="menu-button"
+            aria-label={menuOpen ? "Close navigation" : "Open navigation"}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-navigation"
+            onClick={() => setMenuOpen((open) => !open)}
+          >
+            <span className={menuOpen ? "menu-x" : ""} />
+            <span className={menuOpen ? "menu-x menu-x--2" : ""} />
+          </button>
         </div>
-      </aside>
-
-      <header className="mobile-header">
-        <Link href="/" className="rail-brand" aria-label="ElectronicReboot home">
-          <BrandLogo className="mobile-logo" variant="nav" priority />
-        </Link>
-        <button
-          ref={menuButtonRef}
-          type="button"
-          className="menu-button"
-          aria-label={menuOpen ? "Close navigation" : "Open navigation"}
-          aria-expanded={menuOpen}
-          aria-controls="mobile-navigation"
-          onClick={() => setMenuOpen((open) => !open)}
-        >
-          <span />
-          <span />
-        </button>
       </header>
 
       <AnimatePresence>
@@ -153,6 +165,10 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
                   </Link>
                 );
               })}
+              <div className="mobile-drawer-ctas">
+                <a href={SITE.phoneHref}><PhoneIcon /> Call {SITE.phoneDisplay}</a>
+                <a href={SITE.bookingUrl} target="_blank" rel="noreferrer"><CalendarIcon /> Book a Repair</a>
+              </div>
             </motion.nav>
           </motion.div>
         ) : null}
@@ -163,6 +179,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
         <SiteFooter />
       </main>
 
+      {/* Mobile sticky action dock */}
       <div className="action-dock" aria-label="Contact ElectronicReboot">
         <a className="dock-call" href={SITE.phoneHref}>
           <PhoneIcon />
@@ -181,42 +198,45 @@ function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="section-shell">
-      <div className="footer-grid">
-        <div>
-          <div className="footer-brand"><BrandLogo className="footer-logo" variant="footer" /></div>
-          <p>Fast, reliable device repair.<br />Phone, tablet, laptop, desktop &amp; PC.</p>
+        <div className="footer-grid">
+          <div>
+            <div className="footer-brand">
+              <Image src="/brand/electronicreboot-logo.png" alt="ElectronicReboot" width={180} height={180} style={{ width: 170, height: "auto" }} />
+            </div>
+            <p>Fast, affordable device repair.<br />Phone, tablet, laptop, desktop &amp; PC.</p>
+            <p className="footer-area">Serving Atlanta · Stone Mountain · Duluth · Gwinnett · Athens · and all of Georgia</p>
+          </div>
+          <div className="footer-column">
+            <strong>Repairs</strong>
+            <Link href="/phone-repair">Phone Repair</Link>
+            <Link href="/tablet-repair">Tablet Repair</Link>
+            <Link href="/laptop-repair">Laptop Repair</Link>
+            <Link href="/desktop-repair">Desktop Repair</Link>
+            <Link href="/pc-repair">PC Repair</Link>
+          </div>
+          <div className="footer-column">
+            <strong>Company</strong>
+            <Link href="/work">Work</Link>
+            <Link href="/insights">Insights</Link>
+            <Link href="/about">About</Link>
+            <Link href="/contact">Contact</Link>
+          </div>
+          <div className="footer-column">
+            <strong>Policies</strong>
+            <Link href="/privacy-policy">Privacy</Link>
+            <Link href="/terms">Terms</Link>
+            <Link href="/accessibility">Accessibility</Link>
+          </div>
+          <div className="footer-column">
+            <strong>Contact</strong>
+            <a href={SITE.phoneHref}>{SITE.phoneDisplay}</a>
+            <a href={SITE.bookingUrl} target="_blank" rel="noreferrer">Book a repair call</a>
+          </div>
         </div>
-        <div className="footer-column">
-          <strong>Repairs</strong>
-          <Link href="/phone-repair">Phone Repair</Link>
-          <Link href="/tablet-repair">Tablet Repair</Link>
-          <Link href="/laptop-repair">Laptop Repair</Link>
-          <Link href="/desktop-repair">Desktop Repair</Link>
-          <Link href="/pc-repair">PC Repair</Link>
+        <div className="footer-note">
+          <span>© {new Date().getFullYear()} ElectronicReboot</span>
+          <span> · Lowest diagnostic fee in Georgia · 90-day labor warranty · Honest repairs</span>
         </div>
-        <div className="footer-column">
-          <strong>Company</strong>
-          <Link href="/work">Work</Link>
-          <Link href="/insights">Insights</Link>
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact</Link>
-        </div>
-        <div className="footer-column">
-          <strong>Policies</strong>
-          <Link href="/privacy-policy">Privacy</Link>
-          <Link href="/terms">Terms</Link>
-          <Link href="/accessibility">Accessibility</Link>
-        </div>
-        <div className="footer-column">
-          <strong>Contact</strong>
-          <a href={SITE.phoneHref}>{SITE.phoneDisplay}</a>
-          <a href={SITE.bookingUrl} target="_blank" rel="noreferrer">Book a repair call</a>
-        </div>
-      </div>
-      <div className="footer-note">
-        <span>© {new Date().getFullYear()} ElectronicReboot</span>
-        <span> · Custom Next.js · Fast turnarounds · Honest diagnostics</span>
-      </div>
       </div>
     </footer>
   );
