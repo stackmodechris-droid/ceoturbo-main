@@ -19,7 +19,7 @@ export const NAV_ITEMS = [
   { href: "/laptop-repair", label: "Laptop Repair" },
   { href: "/desktop-repair", label: "Desktop Repair" },
   { href: "/pc-repair", label: "PC Repair" },
-  { href: "/seo-websites", label: "Websites" },
+  { href: "/websites", label: "Websites" },
   { href: "/meta-ads", label: "Meta Ads" },
 ] as const;
 

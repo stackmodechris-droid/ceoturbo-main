@@ -34,7 +34,11 @@ export default function HomePage() {
             <p className="hero-kicker">Fast tech repair & digital growth</p>
             <h1>Your device is broken.<em>We fix it fast.</em></h1>
             <p className="lede">ElectronicReboot repairs phones, tablets, laptops, desktops, and Windows PCs. We also build high-converting websites and run Meta ads. <strong style={{color:"var(--teal)"}}>Lowest diagnostic fee in Georgia</strong> — starting at $29, credited toward your repair. Serving Atlanta, Duluth, Gwinnett, Athens &amp; all of Georgia.</p>
-            <div className="hero-actions"><PrimaryLink href={SITE.bookingUrl}>Book Consultation</PrimaryLink><PrimaryLink href="#services">See all repairs</PrimaryLink><a className="text-link" href={SITE.phoneHref}>Call {SITE.phoneDisplay}</a></div>
+            <div className="hero-actions">
+              <PrimaryLink href={SITE.phoneHref}>Call / Text {SITE.phoneDisplay}</PrimaryLink>
+              <a className="button" href={SITE.bookingUrl}>Book Consultation</a>
+              <PrimaryLink href="#services">See all repairs</PrimaryLink>
+            </div>
             <p className="hero-note">Starting at $29 diagnostic · credited toward repair · 90-day labor warranty</p>
           </div>
           <div className="hero-visual-wrap">
@@ -45,7 +49,7 @@ export default function HomePage() {
               height={400}
               sizes="(max-width: 820px) 92vw, 520px"
               priority
-              style={{ borderRadius: "12px", objectFit: "cover", width: "100%", height: "auto" }}
+              style={{ borderRadius: "12px", objectFit: "cover", width: "100%", height: "100%", minHeight: "350px" }}
             />
           </div>
         </div>
@@ -67,10 +71,41 @@ export default function HomePage() {
         <div className="section-shell">
           <SectionHeader question="What devices do we repair?" answer="From cracked phone screens to slow PCs and broken laptop keyboards — we repair all major device types with honest diagnostics and clear upfront pricing." />
           <div className="model-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))' }}>
-            <article className="model-column"><span>Phones</span><h3>Screen to battery.</h3><p>iPhone and Android screen replacements, battery swaps, charging ports, cameras, and water damage assessment.</p><Link className="button button--teal" style={{ width: '100%', marginTop: 'auto' }} href="/phone-repair">Phone repair</Link></article>
-            <article className="model-column"><span>Tablets</span><h3>iPad to Galaxy Tab.</h3><p>Cracked screens, dead batteries, charging ports, and software issues for iPads and Android tablets.</p><Link className="button button--teal" style={{ width: '100%', marginTop: 'auto' }} href="/tablet-repair">Tablet repair</Link></article>
-            <article className="model-column"><span>Computers</span><h3>Laptop to desktop.</h3><p>Screens, keyboards, batteries, storage upgrades, virus removal, and OS reinstalls for all laptop and PC brands.</p><Link className="button button--teal" style={{ width: '100%', marginTop: 'auto' }} href="/laptop-repair">Laptop repair</Link></article>
-            <article className="model-column"><span>Digital Growth</span><h3>Websites & Ads.</h3><p>High-converting website development, Meta ads management, and virtual assistance for your business.</p><Link className="button button--teal" style={{ width: '100%', marginTop: 'auto' }} href="/seo-websites">Explore digital services</Link></article>
+            <article className="model-column" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              <div style={{ position: 'relative', width: '100%', height: '180px', borderRadius: '8px', overflow: 'hidden' }}>
+                <Image src="/Images/repair/iphone/istockphoto-1183957088-612x612.jpg" alt="Phone repair" fill sizes="(max-width: 768px) 100vw, 300px" style={{ objectFit: 'cover' }} />
+              </div>
+              <h3>Phone Repair</h3>
+              <p>iPhone and Android screen replacements, battery swaps, charging ports, cameras, and water damage assessment.</p>
+              <Link className="button button--teal" style={{ width: '100%', marginTop: 'auto' }} href="/phone-repair">Phone repair</Link>
+            </article>
+            <article className="model-column" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              <div style={{ position: 'relative', width: '100%', height: '180px', borderRadius: '8px', overflow: 'hidden' }}>
+                <Image src="/Images/repair/ipad/istockphoto-508465306-612x612.jpg" alt="Tablet repair" fill sizes="(max-width: 768px) 100vw, 300px" style={{ objectFit: 'cover' }} />
+              </div>
+              <h3>Tablet Repair</h3>
+              <p>Cracked screens, dead batteries, charging ports, and software issues for iPads and Android tablets.</p>
+              <Link className="button button--teal" style={{ width: '100%', marginTop: 'auto' }} href="/tablet-repair">Tablet repair</Link>
+            </article>
+            <article className="model-column" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              <div style={{ position: 'relative', width: '100%', height: '180px', borderRadius: '8px', overflow: 'hidden' }}>
+                <Image src="/Images/repair/windows-pc/wrench-and-screwdriver-on-the-computer-keyboard-it-service-support-free-photo.jpg" alt="Computer repair" fill sizes="(max-width: 768px) 100vw, 300px" style={{ objectFit: 'cover' }} />
+              </div>
+              <h3>Computer Repair</h3>
+              <p>Screens, keyboards, batteries, storage upgrades, virus removal, and OS reinstalls for all laptop and PC brands.</p>
+              <Link className="button button--teal" style={{ width: '100%', marginTop: 'auto' }} href="/laptop-repair">Laptop repair</Link>
+            </article>
+            <article className="model-column" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              <div style={{ position: 'relative', width: '100%', height: '180px', borderRadius: '8px', overflow: 'hidden' }}>
+                <Image src="/Images/stock/business-website-discovery.webp" alt="Websites and Ads" fill sizes="(max-width: 768px) 100vw, 300px" style={{ objectFit: 'cover' }} />
+              </div>
+              <h3>Digital Growth</h3>
+              <p>High-converting website development, Meta ads management, and virtual assistance for your business.</p>
+              <div style={{ display: 'flex', gap: '8px', marginTop: 'auto', flexDirection: 'column' }}>
+                <Link className="button button--teal" style={{ width: '100%' }} href="/websites">Websites</Link>
+                <Link className="button button--teal" style={{ width: '100%' }} href="/meta-ads">Meta Ads</Link>
+              </div>
+            </article>
           </div>
         </div>
       </section>

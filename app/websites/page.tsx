@@ -1,7 +1,9 @@
 import { Metadata } from "next";
 import { buildMetadata } from "@/lib/seo";
 import { SITE } from "@/lib/site";
-import { PrimaryLink, FaqList } from "@/components/page-elements";
+import { PrimaryLink, FaqList, SectionHeader } from "@/components/page-elements";
+import { PortfolioTabs } from "@/components/portfolio-tabs";
+import { websitePreviews } from "@/lib/assets";
 
 export const metadata: Metadata = buildMetadata({
   title: "High-Converting SEO Websites | ElectronicReboot",
@@ -26,8 +28,8 @@ export default function SeoWebsitesPage() {
             <h1>Websites that turn <em>clicks into clients.</em></h1>
             <p className="lede">Stop losing customers to competitors with better websites. ElectronicReboot builds lightning-fast, SEO-optimized websites designed specifically for service businesses in Atlanta, Gwinnett, and all of Georgia.</p>
             <div className="hero-actions">
-              <PrimaryLink href={SITE.bookingUrl}>Book a Consultation</PrimaryLink>
-              <a className="text-link" href={SITE.phoneHref}>Call {SITE.phoneDisplay}</a>
+              <PrimaryLink href={SITE.phoneHref}>Call / Text {SITE.phoneDisplay}</PrimaryLink>
+              <a className="button" href={SITE.bookingUrl}>Book a Call</a>
             </div>
           </div>
           <div className="hero-visual-wrap" style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
@@ -58,11 +60,21 @@ export default function SeoWebsitesPage() {
         </div>
       </section>
 
+      <section className="section section-white">
+        <div className="section-shell">
+          <SectionHeader question="Our Website Portfolio" answer="Browse our live website previews. We build high-converting, lightning-fast sites for service businesses." />
+          <PortfolioTabs websites={websitePreviews} ads={[]} initialTab="websites" />
+        </div>
+      </section>
+
       <section className="final-cta section-dark">
         <div className="section-shell">
           <h2>Ready to upgrade your web presence?</h2>
           <p>Book a free discovery call with us. We&apos;ll look at your current site, your competitors, and show you exactly how we can help you dominate your local market.</p>
-          <PrimaryLink href={SITE.bookingUrl}>Book Your Free Call</PrimaryLink>
+          <div className="hero-actions" style={{ justifyContent: 'center', marginTop: 20 }}>
+            <PrimaryLink href={SITE.phoneHref}>Call / Text {SITE.phoneDisplay}</PrimaryLink>
+            <a className="button" href={SITE.bookingUrl}>Book a Call</a>
+          </div>
         </div>
       </section>
     </>

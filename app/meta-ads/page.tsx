@@ -1,7 +1,10 @@
 import { Metadata } from "next";
 import { buildMetadata } from "@/lib/seo";
 import { SITE } from "@/lib/site";
-import { PrimaryLink, FaqList } from "@/components/page-elements";
+import { PrimaryLink, FaqList, SectionHeader } from "@/components/page-elements";
+import { PortfolioTabs } from "@/components/portfolio-tabs";
+import { ResultInsights } from "@/components/result-insights";
+import { adDesigns, adResults } from "@/lib/assets";
 
 export const metadata: Metadata = buildMetadata({
   title: "Meta Ads Management | Facebook & Instagram Ads | ElectronicReboot",
@@ -26,8 +29,8 @@ export default function MetaAdsPage() {
             <h1>Meta Ads that <em>drive real leads.</em></h1>
             <p className="lede">Stop wasting money on boosted posts. We build and manage data-driven Facebook and Instagram ad campaigns that reliably generate leads and sales for local service businesses.</p>
             <div className="hero-actions">
-              <PrimaryLink href={SITE.bookingUrl}>Book a Consultation</PrimaryLink>
-              <a className="text-link" href={SITE.phoneHref}>Call {SITE.phoneDisplay}</a>
+              <PrimaryLink href={SITE.phoneHref}>Call / Text {SITE.phoneDisplay}</PrimaryLink>
+              <a className="button" href={SITE.bookingUrl}>Book a Call</a>
             </div>
           </div>
           <div className="hero-visual-wrap" style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
@@ -58,11 +61,28 @@ export default function MetaAdsPage() {
         </div>
       </section>
 
+      <section className="section section-white">
+        <div className="section-shell">
+          <SectionHeader question="Ad Designs & Creatives" answer="We design high-converting static image and video creatives. Here are some of our recent ad designs." />
+          <PortfolioTabs websites={[]} ads={adDesigns} initialTab="ads" />
+        </div>
+      </section>
+
+      <section className="section section-paper">
+        <div className="section-shell">
+          <SectionHeader question="Real Campaign Results" answer="Historical campaign snapshots showing actual leads and costs from Meta ads we've managed." />
+          <ResultInsights results={adResults} />
+        </div>
+      </section>
+
       <section className="final-cta section-dark">
         <div className="section-shell">
           <h2>Ready to scale your business?</h2>
           <p>Book a free discovery call. We&apos;ll audit your past campaigns (if any) and map out a strategy to get you a consistent flow of leads.</p>
-          <PrimaryLink href={SITE.bookingUrl}>Book Your Free Call</PrimaryLink>
+          <div className="hero-actions" style={{ justifyContent: 'center', marginTop: 20 }}>
+            <PrimaryLink href={SITE.phoneHref}>Call / Text {SITE.phoneDisplay}</PrimaryLink>
+            <a className="button" href={SITE.bookingUrl}>Book a Call</a>
+          </div>
         </div>
       </section>
     </>

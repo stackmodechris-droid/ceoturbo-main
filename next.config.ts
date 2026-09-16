@@ -8,8 +8,7 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       // Old CEOTurbo service pages → new repair pages or home
-      { source: "/seo-websites", destination: "/", permanent: true },
-      { source: "/meta-ads", destination: "/", permanent: true },
+      { source: "/seo-websites", destination: "/websites", permanent: true },
       { source: "/shirts", destination: "/", permanent: true },
       { source: "/business-cards", destination: "/", permanent: true },
       { source: "/review-cards", destination: "/", permanent: true },

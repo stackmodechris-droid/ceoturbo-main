@@ -15,7 +15,7 @@ export function BrandLogo({
   return (
     <Image
       className={`brand-logo brand-logo--${variant} ${className}`.trim()}
-      src={markOnly ? "/brand/electronicreboot-mark.jpg" : "/brand/electronicreboot-lockup.jpg"}
+      src={markOnly ? "/brand/electronicreboot-mark.png" : "/brand/electronicreboot-lockup.png"}
       alt="ElectronicReboot"
       width={markOnly ? 197 : 492}
       height={markOnly ? 120 : 120}
