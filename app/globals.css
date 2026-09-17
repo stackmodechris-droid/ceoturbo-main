@@ -496,7 +496,7 @@ h3 { font-size: clamp(1.45rem, 2.2vw, 2.2rem); }
 /* Fast Selection Grid */
 .fast-selection-grid { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; padding: 24px; background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.08); border-radius: 12px; height: 100%; min-height: 350px; }
 .fast-selection-title { color: var(--white); font-size: 1.5rem; font-weight: 700; margin-bottom: 0; }
-.fast-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; width: 100%; }
+.fast-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 16px; width: 100%; }
 .fast-card { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 24px; background: rgba(255,255,255,.05); border-radius: 8px; text-decoration: none; color: #b8c4c1; font-weight: 600; transition: background 0.2s, color 0.2s, transform 0.2s; border: 1px solid rgba(255,255,255,.1); }
 .fast-card:hover { background: rgba(255,255,255,.1); color: var(--teal); transform: translateY(-2px); border-color: var(--teal); }
 .fast-card svg { stroke: currentColor; }

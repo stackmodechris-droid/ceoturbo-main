@@ -128,6 +128,19 @@ export default function HomePage() {
                 </svg>
                 <span>PC & Desktop</span>
               </Link>
+              <Link href="/digital-growth" className="fast-card">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect>
+                  <line x1="2" y1="8" x2="22" y2="8"></line>
+                </svg>
+                <span>Website Build</span>
+              </Link>
+              <Link href="/digital-growth" className="fast-card">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path d="M12 20v-6M6 20V10M18 20V4"></path>
+                </svg>
+                <span>Meta Ads</span>
+              </Link>
             </div>
             <a href={SITE.bookingUrl} className="button button--teal fast-booking">Book Consultation</a>
           </div>
