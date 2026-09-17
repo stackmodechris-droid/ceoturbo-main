@@ -25,20 +25,20 @@ export const metadata: Metadata = {
     title: "Fast, Reliable Device Repair — ElectronicReboot",
     description: SITE.description,
     url: SITE.url,
-    images: [{ url: "/brand/electronicreboot-og.jpg", width: 1200, height: 630, alt: "ElectronicReboot — Phone, Tablet, Laptop, Desktop & PC Repair" }],
+    images: [{ url: "/brand/logo.png", width: 1200, height: 630, alt: "ElectronicReboot — Phone, Tablet, Laptop, Desktop & PC Repair" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Fast, Reliable Device Repair — ElectronicReboot",
     description: SITE.description,
-    images: ["/brand/electronicreboot-og.jpg"],
+    images: ["/brand/logo.png"],
   },
   icons: {
     icon: [
-      { url: "/brand/electronicreboot-mark.png", sizes: "192x192", type: "image/png" },
+      { url: "/brand/logo.png", type: "image/png" },
     ],
-    apple: [{ url: "/brand/electronicreboot-mark.png", sizes: "180x180", type: "image/png" }],
-    shortcut: "/brand/electronicreboot-mark.png",
+    apple: [{ url: "/brand/logo.png", type: "image/png" }],
+    shortcut: "/brand/logo.png",
   },
 };
 
