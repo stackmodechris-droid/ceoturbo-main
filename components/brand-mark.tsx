@@ -11,7 +11,7 @@ export function BrandLogo({
   priority?: boolean;
   variant?: BrandLogoVariant;
 }) {
-  const markOnly = variant === "mark";
+
   return (
     <Image
       className={`brand-logo brand-logo--${variant} ${className}`.trim()}

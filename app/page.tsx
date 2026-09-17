@@ -3,7 +3,7 @@ import Image from "next/image";
 import { PrimaryLink, SectionHeader, FaqList } from "@/components/page-elements";
 import { PortfolioTabs } from "@/components/portfolio-tabs";
 import { ResultInsights } from "@/components/result-insights";
-import { Qualifier } from "@/components/qualifier";
+
 import { websitePreviews, adDesigns, adResults } from "@/lib/assets";
 import { SERVICES, SITE, SERVICE_ORDER } from "@/lib/site";
 import { buildMetadata } from "@/lib/seo";
@@ -18,7 +18,7 @@ export const metadata = buildMetadata({
 
 const homeFaqs = [
   { question: "What services does ElectronicReboot provide?", answer: "We repair iPhones, Android phones, iPads, tablets, laptops, desktops, and Windows PCs. We also build high-converting websites and manage Meta ads for businesses across Georgia." },
-  { question: "How long do repairs take?", answer: "Most phone and tablet screen replacements take 30–60 minutes. Laptop and PC repairs are usually same-day or next-day. We give you an honest time estimate when you drop off." },
+  { question: "How long do repairs take?", answer: "Most repairs are completed within 2 days. We will order parts if needed and give you an honest time estimate when you drop off." },
   { question: "Do you offer a warranty on repairs?", answer: "Yes. Every repair comes with a 90-day labor warranty. If the same issue returns within 90 days of the repair, we fix it at no additional labor charge." },
   { question: "Do you charge for a diagnostic?", answer: "Yes — a minimum $70 for virtual appointments, and $100 for mobile (we come to you) repairs. That fee is credited toward any approved repair, so you never pay it twice. We undercut every major chain in the Atlanta area." },
   { question: "Where do you serve in Georgia?", answer: "Mobile and virtual device repair across Atlanta, Gwinnett County, Athens, and surrounding North Georgia communities." },
@@ -114,7 +114,7 @@ export default function HomePage() {
         <div className="section-shell">
           <p className="section-label">Why customers choose us</p>
           <div className="proof-ledger">
-            <div className="proof-stat"><strong>30–60</strong><span>min for most phone repairs</span></div>
+            <div className="proof-stat"><strong>2</strong><span>days max for repairs, we will order parts if needed</span></div>
             <div className="proof-stat"><strong>90</strong><span>day labor warranty on every repair</span></div>
             <div className="proof-stat"><strong>5</strong><span>device types repaired</span></div>
             <div className="proof-stat"><strong>$0</strong><span>extra charge if we can&apos;t fix it</span></div>
@@ -222,7 +222,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="final-cta section-dark"><div className="section-shell"><h2>Ready to get your device repaired?</h2><p>Call us, book a drop-off, or come in anytime. Most phone repairs done in 30–60 min. Virtual appointments from $70, Mobile repairs from $100.</p><PrimaryLink href={SITE.phoneHref}>Call {SITE.phoneDisplay}</PrimaryLink></div></section>
+      <section className="final-cta section-dark"><div className="section-shell"><h2>Ready to get your device repaired?</h2><p>Call us, book a drop-off, or come in anytime. Repairs are finished in max 2 days, and we&apos;ll order parts if needed. Virtual appointments from $70, Mobile repairs from $100.</p><PrimaryLink href={SITE.phoneHref}>Call {SITE.phoneDisplay}</PrimaryLink></div></section>
     </>
   );
 }
