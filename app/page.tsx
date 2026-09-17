@@ -96,16 +96,40 @@ export default function HomePage() {
             </div>
             <p className="hero-note">Starting at $70 for virtual appointments, $100 for mobile repair · credited toward repair · 90-day labor warranty</p>
           </div>
-          <div className="hero-visual-wrap">
-            <Image
-              src="/images/repair/windows-pc/installing-a-cpu-fan-on-a-computer-motherboard-free-photo.jpg"
-              alt="Technician installing a CPU fan on a computer motherboard"
-              width={600}
-              height={400}
-              sizes="(max-width: 820px) 92vw, 520px"
-              priority
-              style={{ borderRadius: "12px", objectFit: "cover", width: "100%", height: "100%", minHeight: "350px" }}
-            />
+          <div className="hero-visual-wrap fast-selection-grid">
+            <h3 className="fast-selection-title">Select your device</h3>
+            <div className="fast-grid">
+              <Link href="/phone-repair" className="fast-card">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+                <span>Phone Repair</span>
+              </Link>
+              <Link href="/tablet-repair" className="fast-card">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+                <span>Tablet Repair</span>
+              </Link>
+              <Link href="/laptop-repair" className="fast-card">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M2 21h20"></path>
+                </svg>
+                <span>Laptop Repair</span>
+              </Link>
+              <Link href="/pc-repair" className="fast-card">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <rect x="4" y="2" width="16" height="12" rx="2" ry="2"></rect>
+                  <line x1="12" y1="14" x2="12" y2="22"></line>
+                  <line x1="8" y1="22" x2="16" y2="22"></line>
+                </svg>
+                <span>PC & Desktop</span>
+              </Link>
+            </div>
+            <a href={SITE.bookingUrl} className="button button--teal fast-booking">Book Consultation</a>
           </div>
         </div>
       </section>
