@@ -8,7 +8,7 @@ const service = SERVICES["pc-repair"];
 
 export const metadata = buildMetadata({
   title: "PC Repair Near Me | Fast Windows PC Repair — ElectronicReboot",
-  description: "Expert Windows PC repair — virus removal, hardware upgrades, OS reinstalls, and diagnostics. Flat $49 diagnostic fee credited toward your repair. 90-day labor warranty.",
+  description: "Expert Windows PC repair — virus removal, hardware upgrades, OS reinstalls, and diagnostics. Mobile (we come to you) and virtual appointments. 90-day labor warranty.",
   path: "/pc-repair",
   image: "/brand/electronicreboot-og.jpg",
   imageAlt: "PC repair technician working on a computer motherboard",
@@ -24,7 +24,7 @@ export default function PcRepairPage() {
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "PC Repair" }]} />
           <div className="service-hero-grid">
             <div>
-              <p className="eyebrow">{service.eyebrow} · fixed diagnostic fee</p>
+              <p className="eyebrow">{service.eyebrow} · virtual & mobile repair</p>
               <h1>PC Repair — Fast, Honest, Guaranteed.</h1>
               <p className="lede">{service.answer}</p>
               <div className="price-lockup"><strong>{service.price}</strong><span>{service.cadence}</span></div>

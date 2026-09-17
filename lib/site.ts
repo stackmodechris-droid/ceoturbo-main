@@ -53,13 +53,13 @@ export const SERVICES: Record<ServiceKey, ServiceOffer> = {
     name: "PC Repair",
     navLabel: "PC Repair",
     eyebrow: "Windows & custom PC",
-    price: "Starting at $35",
-    priceValue: 35,
-    cadence: "flat diagnostic fee — credited toward repair",
+    price: "Starting at $70",
+    priceValue: 70,
+    cadence: "virtual appointments / $100 for mobile (we come to you) repair",
     summary:
       "Fast, honest PC repair — virus removal, hardware replacements, OS reinstalls, and performance tune-ups for Windows PCs of all makes.",
     answer:
-      "ElectronicReboot diagnoses and repairs Windows PCs including virus and malware removal, hard drive and SSD replacements, RAM upgrades, power-supply swaps, motherboard testing, OS reinstalls, and full performance optimizations. Most repairs are completed same-day or next-day. The $49 diagnostic fee is applied toward any approved repair.",
+      "ElectronicReboot diagnoses and repairs Windows PCs including virus and malware removal, hard drive and SSD replacements, RAM upgrades, power-supply swaps, motherboard testing, OS reinstalls, and full performance optimizations. Most repairs are completed same-day or next-day. The $70 virtual diagnostic fee is applied toward any approved repair.",
     idealFor: [
       "PCs running slow, crashing, or failing to boot",
       "Windows computers infected with viruses or malware",
@@ -87,7 +87,7 @@ export const SERVICES: Record<ServiceKey, ServiceOffer> = {
     ],
     faqs: [
       { question: "How long does a PC repair take?", answer: "Most software repairs, virus removals, and OS reinstalls are completed same-day. Hardware repairs that require parts are typically done next-day once parts arrive." },
-      { question: "Is the $49 diagnostic fee charged even if I don't proceed?", answer: "Yes. The diagnostic fee covers the time to fully test the system. If you approve the repair, that $49 is applied toward the total labor cost." },
+      { question: "Is the diagnostic fee charged even if I don't proceed?", answer: "Yes. The diagnostic fee covers the time to fully test the system. If you approve the repair, the diagnostic fee is applied toward the total labor cost." },
       { question: "Can you recover data from a failing PC?", answer: "In many cases yes. Software-level data recovery is included in the diagnostic. Mechanically failed drives require specialized equipment and are quoted separately." },
       { question: "Do you repair all PC brands?", answer: "Yes. We repair HP, Dell, Lenovo, Acer, Asus, custom builds, and any other Windows PC." },
     ],
@@ -97,13 +97,13 @@ export const SERVICES: Record<ServiceKey, ServiceOffer> = {
     name: "Desktop Computer Repair",
     navLabel: "Desktop Repair",
     eyebrow: "All-in-one & tower desktops",
-    price: "Starting at $35",
-    priceValue: 35,
-    cadence: "flat diagnostic fee — credited toward repair",
+    price: "Starting at $70",
+    priceValue: 70,
+    cadence: "virtual appointments / $100 for mobile (we come to you) repair",
     summary:
       "Expert desktop repair for towers, all-in-ones, and workstations — from display issues and power failures to full component replacements.",
     answer:
-      "ElectronicReboot repairs desktop computers including towers, all-in-ones, and workstations. We handle display and GPU issues, power supply failures, motherboard replacements, storage upgrades, cooling system repairs, and complete OS reinstalls for Windows and macOS systems. The $49 diagnostic fee covers a thorough component-level test and is credited toward your repair.",
+      "ElectronicReboot repairs desktop computers including towers, all-in-ones, and workstations. We handle display and GPU issues, power supply failures, motherboard replacements, storage upgrades, cooling system repairs, and complete OS reinstalls for Windows and macOS systems. The $70 virtual diagnostic fee covers a thorough component-level test and is credited toward your repair.",
     idealFor: [
       "Desktops that won't power on or shut off unexpectedly",
       "All-in-one screens with display issues",
@@ -141,9 +141,9 @@ export const SERVICES: Record<ServiceKey, ServiceOffer> = {
     name: "Laptop Repair",
     navLabel: "Laptop Repair",
     eyebrow: "All laptop brands",
-    price: "Starting at $35",
-    priceValue: 35,
-    cadence: "flat diagnostic fee — credited toward repair",
+    price: "Starting at $70",
+    priceValue: 70,
+    cadence: "virtual appointments / $100 for mobile (we come to you) repair",
     summary:
       "Screen replacements, keyboard repairs, battery swaps, charging port fixes, and full software repairs for laptops of all brands.",
     answer:
@@ -186,9 +186,9 @@ export const SERVICES: Record<ServiceKey, ServiceOffer> = {
     name: "Tablet Repair",
     navLabel: "Tablet Repair",
     eyebrow: "iPad & Android tablets",
-    price: "Starting at $29",
-    priceValue: 29,
-    cadence: "flat diagnostic fee — credited toward repair",
+    price: "Starting at $70",
+    priceValue: 70,
+    cadence: "virtual appointments / $100 for mobile (we come to you) repair",
     summary:
       "Cracked screen, battery, charging port, and software repairs for iPads, Samsung Galaxy Tabs, and all major Android tablets.",
     answer:
@@ -230,9 +230,9 @@ export const SERVICES: Record<ServiceKey, ServiceOffer> = {
     name: "Phone Repair",
     navLabel: "Phone Repair",
     eyebrow: "iPhone & Android",
-    price: "Starting at $29",
-    priceValue: 29,
-    cadence: "flat diagnostic fee — credited toward repair",
+    price: "Starting at $70",
+    priceValue: 70,
+    cadence: "virtual appointments / $100 for mobile (we come to you) repair",
     summary:
       "Fast iPhone and Samsung phone repairs — cracked screens, battery replacements, charging ports, cameras, and water damage assessments.",
     answer:

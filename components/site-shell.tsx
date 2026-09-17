@@ -235,7 +235,7 @@ function SiteFooter() {
         </div>
         <div className="footer-note">
           <span>© {new Date().getFullYear()} ElectronicReboot</span>
-          <span> · Lowest diagnostic fee in Georgia · 90-day labor warranty · Honest repairs</span>
+          <span> · Mobile & virtual options · 90-day labor warranty · Honest repairs</span>
         </div>
       </div>
     </footer>

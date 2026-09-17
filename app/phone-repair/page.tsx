@@ -26,7 +26,7 @@ export default function PhoneRepairPage() {
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Phone Repair" }]} />
           <div className="service-hero-grid">
             <div>
-              <p className="eyebrow">{service.eyebrow} · fixed diagnostic fee</p>
+              <p className="eyebrow">{service.eyebrow} · virtual & mobile repair</p>
               <h1>Phone Repair — iPhone &amp; Android Fixed Fast.</h1>
               <p className="lede">{service.answer}</p>
               <div className="price-lockup"><strong>{service.price}</strong><span>{service.cadence}</span></div>

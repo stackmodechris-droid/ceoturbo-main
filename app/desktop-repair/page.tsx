@@ -8,7 +8,7 @@ const service = SERVICES["desktop-repair"];
 
 export const metadata = buildMetadata({
   title: "Desktop Computer Repair | All-in-One & Tower — ElectronicReboot",
-  description: "Expert desktop computer repair for towers, all-in-ones, and workstations. Power failures, display issues, motherboard and component replacement. $49 diagnostic, 90-day warranty.",
+  description: "Expert desktop computer repair for towers, all-in-ones, and workstations. Power failures, display issues, motherboard and component replacement. Mobile & virtual options, 90-day warranty.",
   path: "/desktop-repair",
   image: "/brand/electronicreboot-og.jpg",
   imageAlt: "Desktop computer repair — tower and all-in-one diagnostics",
@@ -24,7 +24,7 @@ export default function DesktopRepairPage() {
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Desktop Repair" }]} />
           <div className="service-hero-grid">
             <div>
-              <p className="eyebrow">{service.eyebrow} · fixed diagnostic fee</p>
+              <p className="eyebrow">{service.eyebrow} · virtual & mobile repair</p>
               <h1>Desktop Computer Repair — Component-Level Diagnostics.</h1>
               <p className="lede">{service.answer}</p>
               <div className="price-lockup"><strong>{service.price}</strong><span>{service.cadence}</span></div>

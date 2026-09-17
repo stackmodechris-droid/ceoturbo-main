@@ -59,7 +59,7 @@ export default async function IPhoneModelRepairPage({ params }: { params: Promis
           />
           <div className="service-hero-grid">
             <div>
-              <p className="eyebrow">{service.eyebrow} · fixed diagnostic fee</p>
+              <p className="eyebrow">{service.eyebrow} · virtual & mobile repair</p>
               <h1>{modelData.name} Repair — Screen & Battery Fixed Fast.</h1>
               <p className="lede">
                 ElectronicReboot repairs the {modelData.name} including cracked screen and LCD replacement, battery swaps, charging port repairs, and water damage assessments. Most repairs are completed in under an hour.

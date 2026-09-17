@@ -10,7 +10,7 @@ import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   title: "ElectronicReboot | Fast Affordable Device Repair — Atlanta, Gwinnett & Georgia",
-  description: "Lowest diagnostic fee in Georgia — starting at $29, credited toward your repair. iPhone, Android, iPad, laptop, desktop & PC repair. Serving Atlanta, Duluth, Gwinnett, Athens & surrounding cities.",
+  description: "Virtual appointments from $70, Mobile repairs from $100, credited toward your repair. iPhone, Android, iPad, laptop, desktop & PC repair. Serving Atlanta, Duluth, Gwinnett, Athens & surrounding cities.",
   path: "/",
   image: "/brand/electronicreboot-og.jpg",
   imageAlt: "ElectronicReboot — Fast Affordable Device Repair in Atlanta Georgia",
@@ -20,7 +20,7 @@ const homeFaqs = [
   { question: "What services does ElectronicReboot provide?", answer: "We repair iPhones, Android phones, iPads, tablets, laptops, desktops, and Windows PCs. We also build high-converting websites and manage Meta ads for businesses across Georgia." },
   { question: "How long do repairs take?", answer: "Most phone and tablet screen replacements take 30–60 minutes. Laptop and PC repairs are usually same-day or next-day. We give you an honest time estimate when you drop off." },
   { question: "Do you offer a warranty on repairs?", answer: "Yes. Every repair comes with a 90-day labor warranty. If the same issue returns within 90 days of the repair, we fix it at no additional labor charge." },
-  { question: "Do you charge for a diagnostic?", answer: "Yes — a flat $29 for phones and tablets, $35 for computers. That fee is credited toward any approved repair, so you never pay it twice. We undercut every major chain in the Atlanta area." },
+  { question: "Do you charge for a diagnostic?", answer: "Yes — a minimum $70 for virtual appointments, and $100 for mobile (we come to you) repairs. That fee is credited toward any approved repair, so you never pay it twice. We undercut every major chain in the Atlanta area." },
   { question: "Where do you serve in Georgia?", answer: "We currently serve Atlanta, Stone Mountain, Duluth, Lawrenceville, Gwinnett County, Athens, Decatur, Norcross, Tucker, Lilburn, Snellville, Suwanee, Johns Creek, Buford, Marietta and surrounding cities. Mobile service is expanding to Florida and North Carolina." },
 ];
 
@@ -33,13 +33,13 @@ export default function HomePage() {
           <div className="hero-copy">
             <p className="hero-kicker">Fast tech repair & digital growth</p>
             <h1>Your device is broken.<em>We fix it fast.</em></h1>
-            <p className="lede">ElectronicReboot repairs phones, tablets, laptops, desktops, and Windows PCs. We also build high-converting websites and run Meta ads. <strong style={{color:"var(--teal)"}}>Lowest diagnostic fee in Georgia</strong> — starting at $29, credited toward your repair. Serving Atlanta, Duluth, Gwinnett, Athens &amp; all of Georgia.</p>
+            <p className="lede">ElectronicReboot repairs phones, tablets, laptops, desktops, and Windows PCs. We also build high-converting websites and run Meta ads. <strong style={{color:"var(--teal)"}}>Virtual appointments from $70</strong> and mobile (we come to you) repairs from $100. Serving Atlanta, Duluth, Gwinnett, Athens &amp; all of Georgia.</p>
             <div className="hero-actions">
               <PrimaryLink href={SITE.phoneHref}>Call / Text {SITE.phoneDisplay}</PrimaryLink>
               <a className="button" href={SITE.bookingUrl}>Book Consultation</a>
               <PrimaryLink href="#services">See all repairs</PrimaryLink>
             </div>
-            <p className="hero-note">Starting at $29 diagnostic · credited toward repair · 90-day labor warranty</p>
+            <p className="hero-note">Starting at $70 for virtual appointments, $100 for mobile repair · credited toward repair · 90-day labor warranty</p>
           </div>
           <div className="hero-visual-wrap">
             <Image
@@ -168,7 +168,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="final-cta section-dark"><div className="section-shell"><h2>Ready to get your device repaired?</h2><p>Call us, book a drop-off, or come in anytime. Most phone repairs done in 30–60 min. Lowest diagnostic fee in Georgia — starting at $29.</p><PrimaryLink href={SITE.phoneHref}>Call {SITE.phoneDisplay}</PrimaryLink></div></section>
+      <section className="final-cta section-dark"><div className="section-shell"><h2>Ready to get your device repaired?</h2><p>Call us, book a drop-off, or come in anytime. Most phone repairs done in 30–60 min. Virtual appointments from $70, Mobile repairs from $100.</p><PrimaryLink href={SITE.phoneHref}>Call {SITE.phoneDisplay}</PrimaryLink></div></section>
     </>
   );
 }

@@ -24,7 +24,7 @@ export default function LaptopRepairPage() {
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Laptop Repair" }]} />
           <div className="service-hero-grid">
             <div>
-              <p className="eyebrow">{service.eyebrow} · fixed diagnostic fee</p>
+              <p className="eyebrow">{service.eyebrow} · virtual & mobile repair</p>
               <h1>Laptop Repair — Screen, Battery, Keyboard &amp; More.</h1>
               <p className="lede">{service.answer}</p>
               <div className="price-lockup"><strong>{service.price}</strong><span>{service.cadence}</span></div>
