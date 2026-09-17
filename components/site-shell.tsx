@@ -67,7 +67,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
         <a className="skip-link" href="#main-content">Skip to intake</a>
         <header className="campaign-header">
           <Link href="/" className="top-brand" aria-label="ElectronicReboot home">
-            <Image src="/brand/electronicreboot-lockup.png" alt="ElectronicReboot" width={492} height={120} priority style={{ width: 140, height: "auto" }} />
+            <Image src="/brand/logo.png" alt="ElectronicReboot" width={120} height={120} priority style={{ width: 60, height: "auto" }} />
           </Link>
           <a href={SITE.phoneHref} aria-label={`Call ElectronicReboot at ${SITE.phoneDisplay}`}><PhoneIcon /><span>Call {SITE.phoneDisplay}</span></a>
         </header>
@@ -85,9 +85,9 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
         <div className="top-header-inner">
           <Link href="/" className="top-brand" aria-label="ElectronicReboot home">
             <Image
-              src="/brand/electronicreboot-lockup.png"
+              src="/brand/logo.png"
               alt="ElectronicReboot"
-              width={492}
+              width={120}
               height={120}
               priority
               style={{ width: 150, height: "auto", objectFit: "contain" }}
@@ -201,7 +201,7 @@ function SiteFooter() {
         <div className="footer-grid">
           <div>
             <div className="footer-brand">
-              <Image src="/brand/electronicreboot-lockup.png" alt="ElectronicReboot" width={492} height={120} style={{ width: 170, height: "auto", objectFit: "contain" }} />
+              <Image src="/brand/logo.png" alt="ElectronicReboot" width={120} height={120} style={{ width: 80, height: "auto", objectFit: "contain" }} />
             </div>
             <p>Fast, affordable device repair.<br />Phone, tablet, laptop, desktop &amp; PC.</p>
             <p className="footer-area">Serving Atlanta · Stone Mountain · Duluth · Gwinnett · Athens · and all of Georgia</p>

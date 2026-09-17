@@ -17,8 +17,8 @@ export function BrandLogo({
       className={`brand-logo brand-logo--${variant} ${className}`.trim()}
       src="/brand/logo.png"
       alt="ElectronicReboot"
-      width={markOnly ? 197 : 492}
-      height={markOnly ? 120 : 120}
+      width={120}
+      height={120}
       priority={priority}
       sizes={variant === "nav" ? "(max-width: 820px) 150px, 196px" : "210px"}
     />

@@ -51,7 +51,7 @@ export function organizationSchema() {
     url: SITE.url,
     telephone: "+16785584327",
     description: SITE.description,
-    logo: absoluteUrl("/brand/electronicreboot-lockup.jpg"),
+    logo: absoluteUrl("/brand/logo.png"),
     image: absoluteUrl("/brand/electronicreboot-og.jpg"),
     priceRange: "$$",
     founder: {
