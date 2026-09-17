@@ -8,8 +8,8 @@ export const SITE = {
   founder: "Christopher Robinson",
   founderAlias: "StackmodeChris",
   description:
-    "ElectronicReboot provides fast, affordable tech repair — phones, tablets, laptops, desktops, Windows PCs — plus website development and Meta ads. Serving Atlanta, Stone Mountain, Duluth, Lawrenceville, Gwinnett County, Athens, Decatur, Norcross, Tucker, Lilburn, Snellville, Suwanee, Johns Creek, Buford & surrounding Georgia cities. Mobile service expanding to Florida & North Carolina.",
-  updated: "2026-09-15"
+    "ElectronicReboot provides fast, affordable tech repair — phones, tablets, laptops, desktops, and Windows PCs. Mobile and virtual device repair across Atlanta, Gwinnett County, Athens, and surrounding North Georgia communities.",
+  updated: "2026-09-17"
 } as const;
 
 export const NAV_ITEMS = [
@@ -19,8 +19,7 @@ export const NAV_ITEMS = [
   { href: "/laptop-repair", label: "Laptop Repair" },
   { href: "/desktop-repair", label: "Desktop Repair" },
   { href: "/pc-repair", label: "PC Repair" },
-  { href: "/websites", label: "Websites" },
-  { href: "/meta-ads", label: "Meta Ads" },
+  { href: "/digital-growth", label: "Digital Growth" },
 ] as const;
 
 export type ServiceKey =

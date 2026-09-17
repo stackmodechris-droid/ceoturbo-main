@@ -32,7 +32,7 @@ img { max-width: 100%; }
 .top-header--scrolled { background: rgba(10,16,15,.97); box-shadow: 0 2px 20px rgba(0,0,0,.4); backdrop-filter: blur(12px); }
 .top-header-inner { display: flex; align-items: center; gap: 24px; height: var(--header-h); width: min(1260px, calc(100% - 48px)); margin-inline: auto; }
 .top-brand { display: flex; align-items: center; flex-shrink: 0; text-decoration: none; }
-.top-brand img { width: 140px; height: auto; }
+.top-brand img { height: auto; }
 .top-nav { display: flex; align-items: center; gap: 4px; margin-left: 16px; flex: 1; }
 .top-nav-link { position: relative; display: flex; align-items: center; padding: 8px 14px; color: #b8c4c1; text-decoration: none; font-size: 14px; font-weight: 700; border-radius: 6px; transition: color .18s ease, background .18s ease; white-space: nowrap; }
 .top-nav-link:hover { color: var(--white); background: rgba(255,255,255,.07); }

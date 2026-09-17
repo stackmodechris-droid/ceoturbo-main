@@ -90,7 +90,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
               width={120}
               height={120}
               priority
-              style={{ width: 150, height: "auto", objectFit: "contain" }}
+              style={{ width: 60, height: "auto", objectFit: "contain" }}
             />
           </Link>
 
