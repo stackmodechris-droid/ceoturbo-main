@@ -28,11 +28,14 @@ export default function PcRepairPage() {
               <h1>PC Repair — Fast, Honest, Guaranteed.</h1>
               <p className="lede">{service.answer}</p>
               <div className="price-lockup"><strong>{service.price}</strong><span>{service.cadence}</span></div>
-              <PrimaryLink href={SITE.phoneHref}>Call to book your repair</PrimaryLink>
+              <div className="hero-actions">
+                <PrimaryLink href={SITE.phoneHref}>Call / Text {SITE.phoneDisplay}</PrimaryLink>
+                <a className="button" href={SITE.bookingUrl}>Book a Repair</a>
+              </div>
             </div>
             <div className="service-image-wrap">
               <Image
-                src="/images/repair/windows-pc/installing-a-cpu-fan-on-a-computer-motherboard-it-service-support-free-photo.jpg"
+                src="/images/repair/windows-pc/installing-a-cpu-fan-on-a-computer-motherboard-free-photo.jpg"
                 alt="Technician installing a CPU fan on a computer motherboard during a PC repair"
                 width={580}
                 height={380}

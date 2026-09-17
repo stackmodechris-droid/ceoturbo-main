@@ -43,7 +43,7 @@ export default function HomePage() {
           </div>
           <div className="hero-visual-wrap">
             <Image
-              src="/Images/repair/windows-pc/installing-a-cpu-fan-on-a-computer-motherboard-free-photo.jpg"
+              src="/images/repair/windows-pc/installing-a-cpu-fan-on-a-computer-motherboard-free-photo.jpg"
               alt="Technician installing a CPU fan on a computer motherboard"
               width={600}
               height={400}
@@ -73,7 +73,7 @@ export default function HomePage() {
           <div className="model-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))' }}>
             <article className="model-column" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <div style={{ position: 'relative', width: '100%', height: '180px', borderRadius: '8px', overflow: 'hidden' }}>
-                <Image src="/Images/repair/iphone/istockphoto-1183957088-612x612.jpg" alt="Phone repair" fill sizes="(max-width: 768px) 100vw, 300px" style={{ objectFit: 'cover' }} />
+                <Image src="/images/repair/iphone/istockphoto-1183957088-612x612.jpg" alt="Phone repair" fill sizes="(max-width: 768px) 100vw, 300px" style={{ objectFit: 'cover' }} />
               </div>
               <h3>Phone Repair</h3>
               <p>iPhone and Android screen replacements, battery swaps, charging ports, cameras, and water damage assessment.</p>
@@ -81,7 +81,7 @@ export default function HomePage() {
             </article>
             <article className="model-column" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <div style={{ position: 'relative', width: '100%', height: '180px', borderRadius: '8px', overflow: 'hidden' }}>
-                <Image src="/Images/repair/ipad/istockphoto-508465306-612x612.jpg" alt="Tablet repair" fill sizes="(max-width: 768px) 100vw, 300px" style={{ objectFit: 'cover' }} />
+                <Image src="/images/repair/ipad/istockphoto-508465306-612x612.jpg" alt="Tablet repair" fill sizes="(max-width: 768px) 100vw, 300px" style={{ objectFit: 'cover' }} />
               </div>
               <h3>Tablet Repair</h3>
               <p>Cracked screens, dead batteries, charging ports, and software issues for iPads and Android tablets.</p>
@@ -89,7 +89,7 @@ export default function HomePage() {
             </article>
             <article className="model-column" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <div style={{ position: 'relative', width: '100%', height: '180px', borderRadius: '8px', overflow: 'hidden' }}>
-                <Image src="/Images/repair/windows-pc/wrench-and-screwdriver-on-the-computer-keyboard-it-service-support-free-photo.jpg" alt="Computer repair" fill sizes="(max-width: 768px) 100vw, 300px" style={{ objectFit: 'cover' }} />
+                <Image src="/images/repair/windows-pc/wrench-and-screwdriver-on-the-computer-keyboard-it-service-support-free-photo.jpg" alt="Computer repair" fill sizes="(max-width: 768px) 100vw, 300px" style={{ objectFit: 'cover' }} />
               </div>
               <h3>Computer Repair</h3>
               <p>Screens, keyboards, batteries, storage upgrades, virus removal, and OS reinstalls for all laptop and PC brands.</p>
@@ -97,7 +97,7 @@ export default function HomePage() {
             </article>
             <article className="model-column" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <div style={{ position: 'relative', width: '100%', height: '180px', borderRadius: '8px', overflow: 'hidden' }}>
-                <Image src="/Images/stock/business-website-discovery.webp" alt="Websites and Ads" fill sizes="(max-width: 768px) 100vw, 300px" style={{ objectFit: 'cover' }} />
+                <Image src="/images/stock/business-website-discovery.webp" alt="Websites and Ads" fill sizes="(max-width: 768px) 100vw, 300px" style={{ objectFit: 'cover' }} />
               </div>
               <h3>Digital Growth</h3>
               <p>High-converting website development, Meta ads management, and virtual assistance for your business.</p>
