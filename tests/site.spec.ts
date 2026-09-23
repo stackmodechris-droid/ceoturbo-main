@@ -33,7 +33,7 @@ test("navigation order and persistent contact actions are exact", async ({ page 
     await expect(page.getByRole("button", { name: "Open navigation" })).toBeFocused();
   }
   await expect(page.locator('.action-dock a[href="tel:+16785584327"]')).toBeVisible();
-  await expect(page.locator('.action-dock a[href="https://cal.com/stackmodechris/ceoturbo-brandboost"]')).toBeVisible();
+  await expect(page.locator('.action-dock a[href="https://calendly.com/electronic-reboot/estimate-call"]')).toBeVisible();
 });
 
 test("qualifier accepts multiple services without personal fields", async ({ page }) => {
@@ -50,7 +50,7 @@ test("qualifier accepts multiple services without personal fields", async ({ pag
   const selectedPackages = page.getByLabel("Selected CEOTurbo packages");
   await expect(selectedPackages.getByText("SEO Visibility Website", { exact: true })).toBeVisible();
   await expect(selectedPackages.getByText("Meta Ads Growth", { exact: true })).toBeVisible();
-  await expect(page.getByRole("link", { name: "Book my visibility call" })).toHaveAttribute("href", "https://cal.com/stackmodechris/ceoturbo-brandboost");
+  await expect(page.getByRole("link", { name: "Book my visibility call" })).toHaveAttribute("href", "https://calendly.com/electronic-reboot/estimate-call");
 });
 
 test("paid-social intake accepts multiple needs and ends with booking and call actions", async ({ page }) => {
@@ -69,7 +69,7 @@ test("paid-social intake accepts multiple needs and ends with booking and call a
   await expect(page.getByRole("heading", { name: "Ready to confirm your next visibility move?" })).toBeVisible();
   await expect(page.getByText("SEO Visibility Website", { exact: true })).toBeVisible();
   await expect(page.getByText("Meta Ads Growth", { exact: true })).toBeVisible();
-  await expect(page.getByRole("link", { name: /Book my visibility call/ })).toHaveAttribute("href", "https://cal.com/stackmodechris/ceoturbo-brandboost");
+  await expect(page.getByRole("link", { name: /Book my visibility call/ })).toHaveAttribute("href", "https://calendly.com/electronic-reboot/estimate-call");
   await expect(page.getByRole("link", { name: "Call 678-558-4327" }).last()).toHaveAttribute("href", "tel:+16785584327");
 });
 

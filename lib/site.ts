@@ -4,7 +4,7 @@ export const SITE = {
   url: "https://electronicreboot.com",
   phoneDisplay: "678-558-4327",
   phoneHref: "tel:+16785584327",
-  bookingUrl: "https://calendly.com/electronic-reboot/book-your-tech-repair-or-digital-growth-consultation",
+  bookingUrl: "https://calendly.com/electronic-reboot/estimate-call",
   founder: "Christopher Robinson",
   founderAlias: "StackmodeChris",
   description:
