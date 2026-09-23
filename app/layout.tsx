@@ -59,6 +59,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-KYZ33MZKJH');
+            gtag('config', 'AW-18468746701/j4ckCN7agIIdEM3ryuZE', {
+              'phone_conversion_number': '6785584327'
+            });
           `}
         </Script>
       </head>
