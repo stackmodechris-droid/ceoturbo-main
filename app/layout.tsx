@@ -50,7 +50,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en" className={`${archivo.variable} ${source.variable}`}>
       <head>
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=GT-5R7RRFRL"
+          src="https://www.googletagmanager.com/gtag/js?id=G-J6BG8YXRZB"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -58,7 +58,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'GT-5R7RRFRL');
+            gtag('config', 'G-J6BG8YXRZB');
           `}
         </Script>
       </head>
